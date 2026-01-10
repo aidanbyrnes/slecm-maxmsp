@@ -36,6 +36,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.125, 0.125, 0.125, 0.0 ],
                     "id": "obj-14",
                     "maxclass": "toggle",
                     "numinlets": 1,
@@ -108,6 +109,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.125, 0.125, 0.125, 0.0 ],
                     "fontsize": 12.0,
                     "format": 6,
                     "id": "obj-11",
@@ -124,6 +126,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.125, 0.125, 0.125, 0.0 ],
                     "fontsize": 12.0,
                     "format": 6,
                     "id": "obj-10",
@@ -166,6 +169,7 @@
             },
             {
                 "box": {
+                    "activebgcolor": [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 0.0 ],
                     "id": "obj-5",
                     "maxclass": "live.scope~",
                     "numinlets": 2,
@@ -173,7 +177,8 @@
                     "outlettype": [ "bang" ],
                     "patching_rect": [ 0.0, 60.0, 195.0, 88.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 56.0, 195.0, 45.0 ]
+                    "presentation_rect": [ 0.0, 56.0, 195.0, 45.0 ],
+                    "range": [ -1.1, 1.1 ]
                 }
             },
             {
@@ -202,7 +207,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 464.0, 151.0, 942.0, 700.0 ],
+                        "rect": [ 464.0, 151.0, 583.0, 700.0 ],
                         "openinpresentation": 1,
                         "boxes": [
                             {
@@ -386,6 +391,7 @@
                             },
                             {
                                 "box": {
+                                    "bgcolor": [ 0.125, 0.125, 0.125, 0.0 ],
                                     "format": 6,
                                     "id": "obj-22",
                                     "maxclass": "flonum",
@@ -493,6 +499,7 @@
                             },
                             {
                                 "box": {
+                                    "bgcolor": [ 0.125, 0.125, 0.125, 0.0 ],
                                     "format": 6,
                                     "id": "obj-6",
                                     "maxclass": "flonum",
@@ -599,6 +606,7 @@
                             },
                             {
                                 "box": {
+                                    "bgcolor": [ 0.125, 0.125, 0.125, 0.0 ],
                                     "format": 6,
                                     "id": "obj-20",
                                     "maxclass": "flonum",
@@ -910,6 +918,23 @@
                     "presentation": 1,
                     "presentation_rect": [ 30.0, 0.0, 165.0, 22.0 ],
                     "varname": "type"
+                }
+            },
+            {
+                "box": {
+                    "angle": 270.0,
+                    "grad1": [ 0.125490196078431, 0.125490196078431, 0.125490196078431, 0.99 ],
+                    "grad2": [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 1.0 ],
+                    "id": "obj-3",
+                    "maxclass": "panel",
+                    "mode": 1,
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 210.0, 96.0, 128.0, 128.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 0.0, 0.0, 195.0, 135.0 ],
+                    "proportion": 0.5,
+                    "rounded": 0
                 }
             }
         ],
