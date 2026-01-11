@@ -1,4 +1,4 @@
-max define slecm.seq.step bpatcher @name slecm.seq.step;
+max define slecm.seq.step~ bpatcher @name slecm.seq.step~;
 max define slecm.granular~ bpatcher @name slecm.granular~;
 max define slecm.lfo~ bpatcher @name slecm.lfo~;
 max define slecm.oneshot~ bpatcher @name slecm.oneshot~;
