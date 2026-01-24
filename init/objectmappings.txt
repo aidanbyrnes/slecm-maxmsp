@@ -7,3 +7,6 @@ max define slecm.envmeter~ bpatcher @name slecm.envmeter~;
 max define slecm.loudness~ bpatcher @name slecm.loudness~;
 max define slecm.channel~ bpatcher @name slecm.channel~;
 max define slecm.seq.16step~ bpatcher @name slecm.seq.16step~;
+max define slecm.scale~ bpatcher @name slecm.scale~;
+max define slecm.gen.kick~ gen~ @gen slecm.kick;
+max define slecm.seq.func~ bpatcher @name slecm.seq.func~;
