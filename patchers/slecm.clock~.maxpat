@@ -13,24 +13,35 @@
         "boxes": [
             {
                 "box": {
-                    "id": "obj-6",
+                    "id": "obj-5",
                     "maxclass": "newobj",
                     "numinlets": 2,
                     "numoutlets": 2,
-                    "outlettype": [ "bang", "" ],
-                    "patching_rect": [ 270.0, 45.0, 34.0, 22.0 ],
-                    "text": "sel 0"
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 360.0, 75.0, 71.0, 22.0 ],
+                    "text": "route active"
                 }
             },
             {
                 "box": {
-                    "id": "obj-5",
+                    "id": "obj-11",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 300.0, 75.0, 55.0, 22.0 ],
+                    "text": "zl.slice 1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-7",
                     "maxclass": "newobj",
                     "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 270.0, 15.0, 77.0, 22.0 ],
-                    "text": "loadmess #1"
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 300.0, 45.0, 72.0, 22.0 ],
+                    "text": "patcherargs"
                 }
             },
             {
@@ -105,6 +116,12 @@
         "lines": [
             {
                 "patchline": {
+                    "destination": [ "obj-8", 0 ],
+                    "source": [ "obj-11", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-1", 0 ],
                     "source": [ "obj-3", 0 ]
                 }
@@ -117,14 +134,20 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-6", 0 ],
+                    "destination": [ "obj-2", 0 ],
                     "source": [ "obj-5", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-8", 0 ],
-                    "source": [ "obj-6", 1 ]
+                    "destination": [ "obj-11", 0 ],
+                    "source": [ "obj-7", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-5", 0 ],
+                    "source": [ "obj-7", 1 ]
                 }
             },
             {

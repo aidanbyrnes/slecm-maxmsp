@@ -16,6 +16,17 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-51",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 675.0, 90.0, 75.0, 22.0 ],
+                    "text": "set $1, bang"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-5",
                     "maxclass": "newobj",
                     "numinlets": 3,
@@ -330,7 +341,7 @@
                     "presentation_rect": [ 30.0, 60.0, 30.0, 36.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_longname": "B[3]",
+                            "parameter_longname": "B",
                             "parameter_mmax": 0.0,
                             "parameter_mmin": -70.0,
                             "parameter_modmode": 3,
@@ -356,7 +367,7 @@
                     "presentation_rect": [ 0.0, 60.0, 30.0, 36.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_longname": "A[3]",
+                            "parameter_longname": "A",
                             "parameter_mmax": 0.0,
                             "parameter_mmin": -70.0,
                             "parameter_modmode": 3,
@@ -603,11 +614,11 @@
                 "box": {
                     "id": "obj-47",
                     "maxclass": "newobj",
-                    "numinlets": 4,
-                    "numoutlets": 4,
-                    "outlettype": [ "", "", "", "" ],
-                    "patching_rect": [ 480.0, 45.0, 177.0, 22.0 ],
-                    "text": "route /volume/db /pan dumposc"
+                    "numinlets": 5,
+                    "numoutlets": 5,
+                    "outlettype": [ "", "", "", "", "" ],
+                    "patching_rect": [ 480.0, 45.0, 213.0, 22.0 ],
+                    "text": "route /volume/db /pan dumposc /name"
                 }
             },
             {
@@ -683,7 +694,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "pan[2]",
+                            "parameter_longname": "pan",
                             "parameter_mmax": 100.0,
                             "parameter_mmin": -100.0,
                             "parameter_modmode": 3,
@@ -774,7 +785,7 @@
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "signal" ],
+                    "outlettype": [ "" ],
                     "patching_rect": [ 60.0, 15.0, 30.0, 30.0 ]
                 }
             },
@@ -797,7 +808,7 @@
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "signal" ],
+                    "outlettype": [ "" ],
                     "patching_rect": [ 15.0, 15.0, 30.0, 30.0 ]
                 }
             },
@@ -812,10 +823,10 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 15.0, 165.0, 48.0, 136.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 120.0, 60.0, 120.0 ],
+                    "presentation_rect": [ 0.0, 120.0, 60.0, 135.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_longname": "live.gain~[2]",
+                            "parameter_longname": "live.gain~",
                             "parameter_mmax": 6.0,
                             "parameter_mmin": -70.0,
                             "parameter_modmode": 3,
@@ -840,7 +851,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 765.0, 150.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 0.0, 60.0, 240.0 ],
+                    "presentation_rect": [ 0.0, 0.0, 60.0, 255.0 ],
                     "proportion": 0.5,
                     "rounded": 0
                 }
@@ -1139,6 +1150,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-51", 0 ],
+                    "source": [ "obj-47", 3 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-1", 1 ],
                     "source": [ "obj-5", 1 ]
                 }
@@ -1153,6 +1170,12 @@
                 "patchline": {
                     "destination": [ "obj-46", 0 ],
                     "source": [ "obj-50", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-19", 0 ],
+                    "source": [ "obj-51", 0 ]
                 }
             },
             {
